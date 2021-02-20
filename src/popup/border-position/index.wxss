@@ -1,0 +1,30 @@
+.border-position {
+  position: fixed;
+  z-index: 200;
+  min-height: 20px;
+  min-width: 20px;
+}
+
+.left {
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.right {
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.top {
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.bottom {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}

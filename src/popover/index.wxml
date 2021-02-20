@@ -1,0 +1,11 @@
+<popup selector="{{selector}}" background="{{background}}" id="popup-base" tapBgClose="{{!!tapBgClose}}"
+  bindposition='doDirection' bgColor='{{backgroundColor}}' catchScroll="{{catchScroll}}"
+  scrollBgClose='{{scrollBgClose}}' left="{{left}}" top="{{top}}">
+  <view class="popup-window ^window float-{{isLeft?'left':'right'}} float-{{isTop?'top':'bottom'}}"
+    style="--node-half-height: {{nodeHalfHeight}}px;--translate-value: {{translateX}}px;">
+    <view class="window-inner">
+      <slot></slot>
+    </view>
+    <view class="triangle-{{isTop?'up':'down'}} float-{{isLeft?'left':'right'}}"></view>
+  </view>
+</popup>

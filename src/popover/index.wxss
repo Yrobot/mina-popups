@@ -1,0 +1,60 @@
+.popup-window {
+  --icon-height: 16rpx;
+  position: absolute;
+  transform: translate(0, 0) !important;
+  left: calc(0rpx - var(--translate-value));
+  right: calc(0rpx - var(--translate-value));
+  top: var(--node-half-height);
+  bottom: var(--node-half-height);
+  margin: var(--icon-height) 0;
+  box-sizing: border-box;
+  padding: 14rpx 20rpx;
+  border-radius: 6rpx;
+  background-color: #fff;
+  overflow: visible;
+}
+
+.float-left {
+  right: auto !important;
+  transform: translate(-50%, 0);
+}
+.float-right {
+  left: auto !important;
+  transform: translate(50%, 0);
+}
+.float-top {
+  bottom: auto !important;
+}
+.float-bottom {
+  top: auto !important;
+}
+
+.popup-window .triangle-up {
+  position: absolute;
+  top: calc(0rpx - var(--icon-height));
+  left: var(--translate-value);
+  right: var(--translate-value);
+  width: 0;
+  height: 0;
+  border-left: 22rpx solid transparent;
+  border-right: 22rpx solid transparent;
+  border-bottom: 30rpx solid #fff;
+  border-radius: 6rpx;
+}
+
+.popup-window .triangle-down {
+  position: absolute;
+  bottom: calc(0rpx - var(--icon-height));
+  left: var(--translate-value);
+  right: var(--translate-value);
+  width: 0;
+  height: 0;
+  border-left: 22rpx solid transparent;
+  border-right: 22rpx solid transparent;
+  border-top: 30rpx solid #fff;
+  border-radius: 6rpx;
+}
+
+.popup-window .window-inner {
+  position: relative;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "mina-popups",
+  "version": "1.0.0",
+  "description": "小程序弹出组件集合",
+  "main": "index.js",
+  "miniprogram": "src",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yrobot/mina-popups.git"
+  },
+  "keywords": [
+    "yrobot",
+    "mina",
+    "popup"
+  ],
+  "author": "yrobot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yrobot/mina-popups/issues"
+  },
+  "homepage": "https://github.com/Yrobot/mina-popups#readme"
+}
