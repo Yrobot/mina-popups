@@ -8,7 +8,21 @@
 
 ## 主要的组件
 
-####
+#### popup
+
+组件整合 popup 的通用逻辑：弹出位置，popup 背景 mask，函数式控制显隐  
+并对 fixed 模式升级，不仅支持直接传入 left、top 控制 popup 位置，还支持传入 selector 自动设置 popup 位置
+
+#### popover
+
+在 popup 的基础上，完善气泡菜单的通用逻辑  
+使用者只需要在 slot 里添加提示或者菜单内容即可  
+popover 会根据触发位置自动改变展示方向
+
+#### menu-popover
+
+在 popover 的基础上，针对小程序引导添加我的小程序的场景，自动将 popover 定位到小程序药丸下方  
+组件自动识别页面 `navigationStyle: custom` 属性，优化展示位，使用者无需关心适配问题
 
 ## demo 展示
 
