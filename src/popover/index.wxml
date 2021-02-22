@@ -1,7 +1,7 @@
-<popup selector="{{selector}}" background="{{background}}" id="popup-base" tapBgClose="{{!!tapBgClose}}"
-  bindposition='doDirection' bgColor='{{backgroundColor}}' catchScroll="{{catchScroll}}"
-  scrollBgClose='{{scrollBgClose}}' left="{{left}}" top="{{top}}">
-  <view class="popup-window ^window float-{{isLeft?'left':'right'}} float-{{isTop?'top':'bottom'}}"
+<popup position='fixed' selector="{{selector}}" mask="{{mask}}" id="popup-base" tapMaskClose="{{!!tapMaskClose}}"
+  bindposition='doDirection' maskColor='{{maskColor}}' catchScroll="{{catchScroll}}"
+  scrollMaskClose='{{scrollMaskClose}}' left="{{left}}" top="{{top}}" unit="{{unit}}">
+  <view class="popup-window ^window ^popover float-{{isLeft?'left':'right'}} float-{{isTop?'top':'bottom'}}"
     style="--node-half-height: {{nodeHalfHeight}}px;--translate-value: {{translateX}}px;">
     <view class="window-inner">
       <slot></slot>

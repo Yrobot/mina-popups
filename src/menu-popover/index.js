@@ -1,14 +1,29 @@
 Component({
   behaviors: ['wx://component-export'],
   export() {
-    this.popupWindow = this.selectComponent('#popup-window');
+    this.popover = this.selectComponent('#popover');
     return {
       open: this.openGuide.bind(this),
       close: this.closeGuide.bind(this),
     };
   },
   options: {},
-  properties: {},
+  properties: {
+    show: {
+      type: Boolean,
+      value: false,
+    },
+  },
+  observers: {
+    show(show) {
+      console.log(show)
+      if (show) {
+        this.openGuide();
+      } else {
+        this.closeGuide();
+      }
+    },
+  },
   data: {
     left: 0,
     top: 0,
@@ -16,11 +31,11 @@ Component({
   },
   methods: {
     closeGuide() {
-      this.popupWindow.close();
+      this.popover.close();
     },
     openGuide() {
       if (this._ready) {
-        this.popupWindow.open();
+        this.popover.open();
       } else {
         this._open_when_ready = true;
       }
@@ -47,7 +62,7 @@ Component({
     created: function () {
       this._ready = false;
       this._open_when_ready = false;
-      this.popupWindow = this.selectComponent('#popup-window');
+      this.popover = this.selectComponent('#popover');
     },
     ready: function () {
       this.getGuidePosition().then(() => {

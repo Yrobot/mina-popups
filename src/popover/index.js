@@ -24,19 +24,23 @@ Component({
       type: Number,
       value: 0,
     },
-    tapBgClose: {
+    unit: {
+      type: String,
+      value: 'px',
+    },
+    tapMaskClose: {
       type: Boolean,
       value: true,
     },
-    scrollBgClose: {
+    scrollMaskClose: {
       type: Boolean,
       value: false,
     },
-    visible: {
+    show: {
       type: Boolean,
-      value: undefined,
+      value: false,
     },
-    bgColor: {
+    maskColor: {
       type: String,
       value: '',
     },
@@ -44,7 +48,7 @@ Component({
       type: Boolean,
       value: true,
     },
-    background: {
+    mask: {
       type: Boolean,
       value: true,
     },
@@ -54,8 +58,8 @@ Component({
     },
   },
   observers: {
-    visible(visible) {
-      if (visible) {
+    show(show) {
+      if (show) {
         if (this.popupBase) {
           this.open();
         } else {

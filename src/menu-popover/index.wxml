@@ -1,5 +1,5 @@
 <view class="mine-mina-guide-holder">
-  <popover left='{{left}}' top="{{top}}" translateX="{{translateX}}" id='popup-window' background="{{false}}">
+  <popover left='{{left}}' top="{{top}}" translateX="{{translateX}}" id='popover' mask="{{false}}">
     <slot></slot>
   </popover>
 </view>
