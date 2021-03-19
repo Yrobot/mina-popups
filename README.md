@@ -1,5 +1,7 @@
 # mina-popups
 
+![](https://track.yrobot.top/ga-beacon/UA-190592680-2/mina-popups/readme?flat)
+
 `mina-popups`，一个方便、轻量的 **小程序** 弹出组件集合
 
 ## change log：
