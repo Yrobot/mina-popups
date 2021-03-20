@@ -89,11 +89,11 @@ Component({
       this.popupBase = this.selectComponent('#popup-base');
       return this.popupBase;
     },
-    open() {
+    open(area) {
       if (!this._init) {
         this.init();
       }
-      this.popupBase.open();
+      this.popupBase.open(area);
     },
     close() {
       if (!this._init) {
