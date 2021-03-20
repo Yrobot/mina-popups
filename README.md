@@ -6,7 +6,8 @@
 
 ## change log：
 
-1. 2021.02.22 init package
+1. 2021.02.22 v1.0.0 init package
+2. 2021.03.20 v1.0.1 1.popover添加box-shadow 2.popver.open支持传入area
 
 ## 层叠顺序规范
 
